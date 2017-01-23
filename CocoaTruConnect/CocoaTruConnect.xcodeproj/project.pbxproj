@@ -16,6 +16,12 @@
 		2B99D45B1E35B4B700A7CB4B /* CTCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */; };
 		2B99D45E1E35B90400A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B99D45F1E35B90600A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B99D48B1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4891E35DB7800A7CB4B /* CTCDeviceDelegate.swift */; };
+		2B99D48C1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4891E35DB7800A7CB4B /* CTCDeviceDelegate.swift */; };
+		2B99D48D1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4891E35DB7800A7CB4B /* CTCDeviceDelegate.swift */; };
+		2B99D48E1E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D48A1E35DB7800A7CB4B /* CTCManagerDelegate.swift */; };
+		2B99D48F1E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D48A1E35DB7800A7CB4B /* CTCManagerDelegate.swift */; };
+		2B99D4901E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D48A1E35DB7800A7CB4B /* CTCManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,8 @@
 		2B99D4511E35B18D00A7CB4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		2B99D4541E35B43400A7CB4B /* CTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCManager.swift; path = ../Source/CTCManager.swift; sourceTree = "<group>"; };
 		2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCDevice.swift; path = Source/CTCDevice.swift; sourceTree = SOURCE_ROOT; };
+		2B99D4891E35DB7800A7CB4B /* CTCDeviceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCDeviceDelegate.swift; path = Source/CTCDeviceDelegate.swift; sourceTree = SOURCE_ROOT; };
+		2B99D48A1E35DB7800A7CB4B /* CTCManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCManagerDelegate.swift; path = Source/CTCManagerDelegate.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,8 @@
 			children = (
 				2B99D4541E35B43400A7CB4B /* CTCManager.swift */,
 				2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */,
+				2B99D4891E35DB7800A7CB4B /* CTCDeviceDelegate.swift */,
+				2B99D48A1E35DB7800A7CB4B /* CTCManagerDelegate.swift */,
 			);
 			path = CocoaTruConnect;
 			sourceTree = "<group>";
@@ -219,6 +229,8 @@
 			files = (
 				2B99D4591E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
 				2B99D4551E35B43400A7CB4B /* CTCManager.swift in Sources */,
+				2B99D48B1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */,
+				2B99D48E1E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +240,8 @@
 			files = (
 				2B99D45A1E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
 				2B99D4561E35B43400A7CB4B /* CTCManager.swift in Sources */,
+				2B99D48C1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */,
+				2B99D48F1E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,8 @@
 			files = (
 				2B99D45B1E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
 				2B99D4571E35B43400A7CB4B /* CTCManager.swift in Sources */,
+				2B99D48D1E35DB7800A7CB4B /* CTCDeviceDelegate.swift in Sources */,
+				2B99D4901E35DB7800A7CB4B /* CTCManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

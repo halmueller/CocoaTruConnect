@@ -13,4 +13,8 @@ class CTCDevice: NSObject, CBPeripheralDelegate {
 	func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
 
 	}
+
+	func send(string: String) {
+		print(string)
+	}
 }

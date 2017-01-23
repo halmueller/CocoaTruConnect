@@ -13,6 +13,8 @@
 		2B99D4751E35BDCD00A7CB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B99D4731E35BDCD00A7CB4B /* Main.storyboard */; };
 		2B99D4831E35BF9500A7CB4B /* CTCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4811E35BF9500A7CB4B /* CTCDevice.swift */; };
 		2B99D4841E35BF9500A7CB4B /* CTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4821E35BF9500A7CB4B /* CTCManager.swift */; };
+		2B99D4861E35DB3A00A7CB4B /* CTCManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4851E35DB3A00A7CB4B /* CTCManagerDelegate.swift */; };
+		2B99D4881E35DB6400A7CB4B /* CTCDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4871E35DB6400A7CB4B /* CTCDeviceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2B99D4761E35BDCD00A7CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B99D4811E35BF9500A7CB4B /* CTCDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCDevice.swift; path = ../../../CocoaTruConnect/Source/CTCDevice.swift; sourceTree = "<group>"; };
 		2B99D4821E35BF9500A7CB4B /* CTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCManager.swift; path = ../../../CocoaTruConnect/Source/CTCManager.swift; sourceTree = "<group>"; };
+		2B99D4851E35DB3A00A7CB4B /* CTCManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCManagerDelegate.swift; path = ../../../CocoaTruConnect/Source/CTCManagerDelegate.swift; sourceTree = "<group>"; };
+		2B99D4871E35DB6400A7CB4B /* CTCDeviceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCDeviceDelegate.swift; path = ../../../CocoaTruConnect/Source/CTCDeviceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			children = (
 				2B99D4811E35BF9500A7CB4B /* CTCDevice.swift */,
 				2B99D4821E35BF9500A7CB4B /* CTCManager.swift */,
+				2B99D4851E35DB3A00A7CB4B /* CTCManagerDelegate.swift */,
+				2B99D4871E35DB6400A7CB4B /* CTCDeviceDelegate.swift */,
 			);
 			name = CocoaTruConnect;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				2B99D4701E35BDCD00A7CB4B /* ViewController.swift in Sources */,
 				2B99D4831E35BF9500A7CB4B /* CTCDevice.swift in Sources */,
 				2B99D46E1E35BDCD00A7CB4B /* AppDelegate.swift in Sources */,
+				2B99D4861E35DB3A00A7CB4B /* CTCManagerDelegate.swift in Sources */,
+				2B99D4881E35DB6400A7CB4B /* CTCDeviceDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

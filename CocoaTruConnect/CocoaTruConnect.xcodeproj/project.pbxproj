@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B99D4291E35A95C00A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D41B1E35A95C00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B99D44E1E35AD5400A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D41B1E35A95C00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B99D44F1E35AD5500A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D41B1E35A95C00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B99D4521E35B18D00A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B99D4551E35B43400A7CB4B /* CTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4541E35B43400A7CB4B /* CTCManager.swift */; };
+		2B99D4561E35B43400A7CB4B /* CTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4541E35B43400A7CB4B /* CTCManager.swift */; };
+		2B99D4571E35B43400A7CB4B /* CTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4541E35B43400A7CB4B /* CTCManager.swift */; };
+		2B99D4591E35B4B700A7CB4B /* CTCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */; };
+		2B99D45A1E35B4B700A7CB4B /* CTCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */; };
+		2B99D45B1E35B4B700A7CB4B /* CTCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */; };
+		2B99D45E1E35B90400A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B99D45F1E35B90600A7CB4B /* CocoaTruConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B99D4181E35A95C00A7CB4B /* CocoaTruConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaTruConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B99D41B1E35A95C00A7CB4B /* CocoaTruConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CocoaTruConnect.h; path = CocoaTruConnect/CocoaTruConnect.h; sourceTree = "<group>"; };
-		2B99D41C1E35A95C00A7CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CocoaTruConnect/Info.plist; sourceTree = "<group>"; };
 		2B99D4371E35AA1400A7CB4B /* CocoaTruConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaTruConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B99D4441E35AA3000A7CB4B /* CocoaTruConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaTruConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaTruConnect.h; path = Source/CocoaTruConnect.h; sourceTree = "<group>"; };
+		2B99D4511E35B18D00A7CB4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		2B99D4541E35B43400A7CB4B /* CTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCManager.swift; path = ../Source/CTCManager.swift; sourceTree = "<group>"; };
+		2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTCDevice.swift; path = Source/CTCDevice.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				2B99D41A1E35A95C00A7CB4B /* CocoaTruConnect */,
-				2B99D41B1E35A95C00A7CB4B /* CocoaTruConnect.h */,
-				2B99D41C1E35A95C00A7CB4B /* Info.plist */,
+				2B99D4501E35B18D00A7CB4B /* CocoaTruConnect.h */,
+				2B99D4511E35B18D00A7CB4B /* Info.plist */,
 				2B99D4191E35A95C00A7CB4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +76,8 @@
 		2B99D41A1E35A95C00A7CB4B /* CocoaTruConnect */ = {
 			isa = PBXGroup;
 			children = (
+				2B99D4541E35B43400A7CB4B /* CTCManager.swift */,
+				2B99D4581E35B4B700A7CB4B /* CTCDevice.swift */,
 			);
 			path = CocoaTruConnect;
 			sourceTree = "<group>";
@@ -79,7 +89,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B99D4291E35A95C00A7CB4B /* CocoaTruConnect.h in Headers */,
+				2B99D4521E35B18D00A7CB4B /* CocoaTruConnect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +97,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B99D44E1E35AD5400A7CB4B /* CocoaTruConnect.h in Headers */,
+				2B99D45E1E35B90400A7CB4B /* CocoaTruConnect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B99D44F1E35AD5500A7CB4B /* CocoaTruConnect.h in Headers */,
+				2B99D45F1E35B90600A7CB4B /* CocoaTruConnect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +119,6 @@
 				2B99D4131E35A95C00A7CB4B /* Sources */,
 				2B99D4141E35A95C00A7CB4B /* Frameworks */,
 				2B99D4151E35A95C00A7CB4B /* Headers */,
-				2B99D4161E35A95C00A7CB4B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -127,7 +136,6 @@
 				2B99D4321E35AA1400A7CB4B /* Sources */,
 				2B99D4331E35AA1400A7CB4B /* Frameworks */,
 				2B99D4341E35AA1400A7CB4B /* Headers */,
-				2B99D4351E35AA1400A7CB4B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,7 +153,6 @@
 				2B99D43F1E35AA3000A7CB4B /* Sources */,
 				2B99D4401E35AA3000A7CB4B /* Frameworks */,
 				2B99D4411E35AA3000A7CB4B /* Headers */,
-				2B99D4421E35AA3000A7CB4B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -169,16 +176,19 @@
 					2B99D4171E35A95C00A7CB4B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TW8SJXYFP5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					2B99D4361E35AA1400A7CB4B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TW8SJXYFP5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					2B99D4431E35AA3000A7CB4B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TW8SJXYFP5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -202,35 +212,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		2B99D4161E35A95C00A7CB4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B99D4351E35AA1400A7CB4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B99D4421E35AA3000A7CB4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2B99D4131E35A95C00A7CB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B99D4591E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
+				2B99D4551E35B43400A7CB4B /* CTCManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B99D45A1E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
+				2B99D4561E35B43400A7CB4B /* CTCManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B99D45B1E35B4B700A7CB4B /* CTCDevice.swift in Sources */,
+				2B99D4571E35B43400A7CB4B /* CTCManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +342,7 @@
 		2B99D42D1E35A95C00A7CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -358,12 +351,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halmueller.CocoaTruConnect;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -371,6 +365,7 @@
 		2B99D42E1E35A95C00A7CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -379,7 +374,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halmueller.CocoaTruConnect;
@@ -392,6 +387,7 @@
 		2B99D43D1E35AA1400A7CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -399,7 +395,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -407,6 +403,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,6 +412,7 @@
 		2B99D43E1E35AA1400A7CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -422,7 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -439,19 +437,21 @@
 		2B99D44A1E35AA3000A7CB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halmueller.CocoaTruConnect;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.1;
@@ -461,13 +461,14 @@
 		2B99D44B1E35AA3000A7CB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CocoaTruConnect/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.halmueller.CocoaTruConnect;

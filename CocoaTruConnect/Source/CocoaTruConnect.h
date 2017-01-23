@@ -6,7 +6,7 @@
 //  Copyright © 2017 Hal Mueller. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for CocoaTruConnect.
 FOUNDATION_EXPORT double CocoaTruConnectVersionNumber;

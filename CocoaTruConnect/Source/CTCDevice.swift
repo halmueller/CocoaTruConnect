@@ -7,7 +7,10 @@
 //
 
 import CoreFoundation
+import CoreBluetooth
 
-class CTCDevice: NSObject {
+class CTCDevice: NSObject, CBPeripheralDelegate {
+	func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
 
+	}
 }

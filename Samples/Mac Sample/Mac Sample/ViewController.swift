@@ -55,7 +55,7 @@ class ViewController: NSViewController, CTCManagerDelegate, CTCDeviceDelegate {
 
 	@IBAction func sendGoodbye(_ sender: Any) {
 		if let dest = self.devicesArrayController.selectedObjects.first as? CTCDevice {
-			dest.send(string:"Asta la vista, baby!")
+			dest.send(string:"Hasta la vista, baby!")
 		}
 	}
 	

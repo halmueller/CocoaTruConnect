@@ -38,18 +38,41 @@ let serialNumberCharacteristicUUID =     CBUUID(string: "2A25")
 let hardwareRevisionCharacteristicUUID = CBUUID(string: "2A27")
 let softwareRevisionCharacteristicUUID = CBUUID(string: "2A28")
 
-class CTCManager: NSObject, CBCentralManagerDelegate {
 
-	func centralManagerDidUpdateState(_ central: CBCentralManager) {
+public protocol CTCManagerDelegate {
+	func manager(_ manager: CTCManager, didDiscoverDevice device: CTCDevice)
+}
+
+public class CTCManager: NSObject, CBCentralManagerDelegate {
+
+	public var delegate: CTCManagerDelegate?
+
+	public func startScanning() {
+		print(#function)
+
+	}
+	public func stopScanning() {
+		print(#function)
+
+	}
+	
+	// MARK: - CBCentralManagerDelegate
+
+	public func centralManagerDidUpdateState(_ central: CBCentralManager) {
+		print(#function)
 	}
 
-	func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+	public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+		print(#function)
 	}
-	func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+	public func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+		print(#function)
 	}
-	func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+	public func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+		print(#function)
 	}
-	func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+	public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+		print(#function)
 
 	}
 }

@@ -16,6 +16,8 @@ class ViewController: NSViewController, CTCManagerDelegate, CTCDeviceDelegate {
 	@IBOutlet var deviceOutput: NSTextView!
 	// see http://www.rockhoppertech.com/blog/swift-nstableview-and-nsarraycontroller/ for Bindings notes
 
+	var manager = CTCManager()
+
 	dynamic var knownDevices: [CTCDevice] = []
 	var isScanning: Bool = false
 
@@ -37,9 +39,11 @@ class ViewController: NSViewController, CTCManagerDelegate, CTCDeviceDelegate {
 		isScanning = !isScanning
 		if isScanning {
 			scanStopButton.title = "Stop Scanning"
+			self.manager.startScanning()
 		}
 		else {
 			scanStopButton.title = "Scan for TruConnects"
+			self.manager.stopScanning()
 		}
 	}
 

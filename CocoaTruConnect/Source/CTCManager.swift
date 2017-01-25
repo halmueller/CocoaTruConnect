@@ -40,7 +40,7 @@ let softwareRevisionCharacteristicUUID = CBUUID(string: "2A28")
 
 
 public protocol CTCManagerDelegate {
-	func manager(_ manager: CTCManager, didDiscoverDevice device: CTCDevice)
+	func manager(_ manager: CTCManager, didDiscoverDevice device: CTCSerialDevice)
 }
 
 public class CTCManager: NSObject, CBCentralManagerDelegate {
@@ -49,17 +49,42 @@ public class CTCManager: NSObject, CBCentralManagerDelegate {
 
 	public func startScanning() {
 		print(#function)
-
+		let options = [CBCentralManagerScanOptionAllowDuplicatesKey: false]
+		centralManager?.scanForPeripherals(withServices: [truconnectServiceUUID], options: options)
 	}
 	public func stopScanning() {
 		print(#function)
 
 	}
+
+	let knownUUIDs = NSMutableSet()
+
+	override init () {
+		super.init()
+		let centralRoleEventsQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+		centralManager = CBCentralManager(delegate: self, queue: centralRoleEventsQueue, options: [CBCentralManagerOptionShowPowerAlertKey: true])
+	}
+
+	var centralManager: CBCentralManager?
+
+	public func connect(device: CTCSerialDevice) {
+		if let peripheral = device.peripheral {
+			centralManager?.connect(peripheral, options: nil)
+		}
+	}
+
+	public func disconnect(device: CTCSerialDevice) {
+		if let peripheral = device.peripheral {
+			centralManager?.cancelPeripheralConnection(peripheral)
+		}
+	}
 	
+
+
 	// MARK: - CBCentralManagerDelegate
 
 	public func centralManagerDidUpdateState(_ central: CBCentralManager) {
-		print(#function)
+		print(#function, central.state.rawValue)
 	}
 
 	public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -73,6 +98,13 @@ public class CTCManager: NSObject, CBCentralManagerDelegate {
 	}
 	public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
 		print(#function)
-
+		if !knownUUIDs.contains(peripheral.identifier) {
+			knownUUIDs.add(peripheral.identifier)
+			let serialDevice = CTCSerialDevice()
+			serialDevice.peripheral = peripheral
+			serialDevice.name = peripheral.name
+			serialDevice.identifier = peripheral.identifier
+			delegate?.manager(self, didDiscoverDevice: serialDevice)
+		}
 	}
 }

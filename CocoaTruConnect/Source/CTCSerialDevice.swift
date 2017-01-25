@@ -9,16 +9,20 @@
 import CoreFoundation
 import CoreBluetooth
 
-public protocol CTCDeviceDelegate {
-	func device(_ device: CTCDevice, didReceiveString string: String)
+public protocol CTCSerialDeviceDelegate {
+	func device(_ device: CTCSerialDevice, didReceiveString string: String)
 }
 
-public class CTCDevice: NSObject, CBPeripheralDelegate {
-	var delegate: CTCDeviceDelegate?
-
+public class CTCSerialDevice: NSObject, CBPeripheralDelegate {
+	public var delegate: CTCSerialDeviceDelegate?
+	public var name: String?
+	public var identifier: UUID?
+	
 	public func send(string: String) {
 		print(#function, string)
 	}
+
+	var peripheral: CBPeripheral?
 
 	// MARK: - CBPeripheralDelegate
 	public func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {

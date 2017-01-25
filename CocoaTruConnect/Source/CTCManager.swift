@@ -58,6 +58,7 @@ public class CTCManager: NSObject, CBCentralManagerDelegate {
 	}
 
 	let knownUUIDs = NSMutableSet()
+	var serialDevices: [UUID: CTCSerialDevice] = [:]
 
 	override init () {
 		super.init()
@@ -88,23 +89,31 @@ public class CTCManager: NSObject, CBCentralManagerDelegate {
 	}
 
 	public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-		print(#function)
+		print(#function, peripheral, serialDevices[peripheral.identifier] ?? "")
+		peripheral.discoverServices([truconnectServiceUUID])
 	}
+
 	public func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
-		print(#function)
+		print(#function, peripheral, serialDevices[peripheral.identifier] ?? "")
 	}
+
 	public func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
-		print(#function)
+		print(#function, peripheral, serialDevices[peripheral.identifier] ?? "")
 	}
+	
 	public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-		print(#function)
+		print(#function, peripheral.services)
 		if !knownUUIDs.contains(peripheral.identifier) {
 			knownUUIDs.add(peripheral.identifier)
-			let serialDevice = CTCSerialDevice()
-			serialDevice.peripheral = peripheral
-			serialDevice.name = peripheral.name
-			serialDevice.identifier = peripheral.identifier
-			delegate?.manager(self, didDiscoverDevice: serialDevice)
+			let newDevice = CTCSerialDevice()
+			peripheral.delegate = newDevice
+			newDevice.peripheral = peripheral
+			newDevice.name = peripheral.name
+			newDevice.identifier = peripheral.identifier
+			serialDevices[peripheral.identifier] = newDevice
+			//			peripheral.discoverServices([truconnectServiceUUID])
+			peripheral.discoverServices(nil)
+			delegate?.manager(self, didDiscoverDevice: newDevice)
 		}
 	}
 }
